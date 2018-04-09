@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour {
+public class UIManager : MonoBehaviour {
+    private static UIManager instance;
 
+    
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
 		
 	}
 	
@@ -13,4 +16,11 @@ public class GameManager : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    public UIManager GetInstance()
+    {
+        if (instance == null)
+            instance = this;
+        return instance;
+    }
 }

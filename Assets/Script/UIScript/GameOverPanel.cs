@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StartMenu : MonoBehaviour {
+public class GameOverPanel : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
