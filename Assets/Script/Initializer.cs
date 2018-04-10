@@ -3,7 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
-
+/// <summary>
+/// 游戏初始化类
+/// </summary>
 public class Initializer : MonoBehaviour {
 
     // Use this for initialization
@@ -13,7 +15,6 @@ public class Initializer : MonoBehaviour {
         AVObject gameScore = new AVObject("GameScore");
         gameScore["score"] = 1;
         gameScore["playerName"] = "KK";
-        Task saveTask = gameScore.SaveAsync();
     }
 	
 	// Update is called once per frame

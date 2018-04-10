@@ -263,6 +263,42 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="DOTween">
+      <HintPath>Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween43">
+      <HintPath>Assets/Plugins/Demigiant/DOTween/DOTween43.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween46">
+      <HintPath>Assets/Plugins/Demigiant/DOTween/DOTween46.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween50">
+      <HintPath>Assets/Plugins/Demigiant/DOTween/DOTween50.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTweenEditor">
+      <HintPath>Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="AssemblyLister">
+      <HintPath>Assets/Plugins/LeanCloud/AssemblyLister.dll</HintPath>
+    </Reference>
+    <Reference Include="LeanCloud.Core">
+      <HintPath>Assets/Plugins/LeanCloud/LeanCloud.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="LeanCloud.Realtime">
+      <HintPath>Assets/Plugins/LeanCloud/LeanCloud.Realtime.dll</HintPath>
+    </Reference>
+    <Reference Include="LeanCloud.Storage">
+      <HintPath>Assets/Plugins/LeanCloud/LeanCloud.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Compat">
+      <HintPath>Assets/Plugins/LeanCloud/Unity.Compat.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Tasks">
+      <HintPath>Assets/Plugins/LeanCloud/Unity.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="websocket-sharp">
+      <HintPath>Assets/Plugins/LeanCloud/websocket-sharp.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.Advertisements">
       <HintPath>C:/Users/KK47/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/UnityEngine.Advertisements.dll</HintPath>
     </Reference>
@@ -283,42 +319,6 @@
     </Reference>
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>C:/Users/KK47/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
-    </Reference>
-    <Reference Include="AssemblyLister">
-      <HintPath>Assets/Plugins/LeanCloud/AssemblyLister.dll</HintPath>
-    </Reference>
-    <Reference Include="LeanCloud.Core">
-      <HintPath>Assets/Plugins/LeanCloud/LeanCloud.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="LeanCloud.Realtime">
-      <HintPath>Assets/Plugins/LeanCloud/LeanCloud.Realtime.dll</HintPath>
-    </Reference>
-    <Reference Include="LeanCloud.Storage">
-      <HintPath>Assets/Plugins/LeanCloud/LeanCloud.Storage.dll</HintPath>
-    </Reference>
-    <Reference Include="websocket-sharp">
-      <HintPath>Assets/Plugins/LeanCloud/websocket-sharp.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTween43">
-      <HintPath>Assets/Plugins/Demigiant/DOTween/DOTween43.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTween46">
-      <HintPath>Assets/Plugins/Demigiant/DOTween/DOTween46.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTween50">
-      <HintPath>Assets/Plugins/Demigiant/DOTween/DOTween50.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTween">
-      <HintPath>Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTweenEditor">
-      <HintPath>Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Tasks">
-      <HintPath>Assets/Plugins/LeanCloud/Unity.Tasks.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Compat">
-      <HintPath>Assets/Plugins/LeanCloud/Unity.Compat.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
