@@ -1398,7 +1398,7 @@ GameObject:
   - component: {fileID: 353568128}
   - component: {fileID: 353568127}
   m_Layer: 5
-  m_Name: 'rank_btn '
+  m_Name: rank_btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2417,6 +2417,7 @@ GameObject:
   - component: {fileID: 624944573}
   - component: {fileID: 624944575}
   - component: {fileID: 624944574}
+  - component: {fileID: 624944576}
   m_Layer: 5
   m_Name: PausePanel
   m_TagString: Untagged
@@ -2479,6 +2480,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 624944572}
+--- !u!114 &624944576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 624944572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7563951c85e0db240acfec33b6833e40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &637814588
 GameObject:
   m_ObjectHideFlags: 0
@@ -4174,7 +4186,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1088323056
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6338,7 +6350,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1825113815
 RectTransform:
   m_ObjectHideFlags: 0

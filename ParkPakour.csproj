@@ -331,6 +331,7 @@
     <Compile Include="Assets\Script\Initializer.cs" />
     <Compile Include="Assets\Script\UIScript\GameOverPanel.cs" />
     <Compile Include="Assets\Script\UIScript\GamingPanel.cs" />
+    <Compile Include="Assets\Script\UIScript\PausePanel.cs" />
     <Compile Include="Assets\Script\UIScript\RankPanel.cs" />
     <Compile Include="Assets\Script\UIScript\SettingPanel.cs" />
     <Compile Include="Assets\Script\UIScript\SkillPanel.cs" />

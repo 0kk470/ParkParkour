@@ -7,35 +7,31 @@ using UnityEngine;
 /// </summary>
 public class UIManager : MonoBehaviour {
     private static UIManager instance;
-    private Transform StartPanel;
-    private Transform SkillPanel;
-    private Transform GamingPanel;
-    private Transform GameOverPanel;
-    private Transform RankPanel;
-    private Transform SettingPanel;
-    private Transform PausePanel;
+    private Dictionary<string, Transform> UIObjects;
     // Use this for initialization
     void Start ()
     {
-        StartPanel = transform.Find("StartPanel");
-        SkillPanel = transform.Find("SkillPanel");
-        GamingPanel = transform.Find("GamingPanel");
-        GameOverPanel = transform.Find("GameOverPanel");
-        RankPanel = transform.Find("RankPanel");
-        SettingPanel = transform.Find("SettingPanel");
-        PausePanel = transform.Find("PausePanel");
-        Init();
+        instance = this;
+        UIObjects = new Dictionary<string, Transform>();
+        UIObjects["StartPanel"] = transform.Find("StartPanel");
+        UIObjects["SkillPanel"] = transform.Find("SkillPanel");
+        UIObjects["GamingPanel"] = transform.Find("GamingPanel");
+        UIObjects["GameOverPanel"] = transform.Find("GameOverPanel");
+        UIObjects["RankPanel"] = transform.Find("RankPanel");
+        UIObjects["SettingPanel"] = transform.Find("SettingPanel");
+        UIObjects["PausePanel"] = transform.Find("PausePanel");
+        InitPanel();
     }
 	
 
-    public UIManager GetInstance()
+    public static UIManager GetInstance()
     {
         if (instance == null)
-            instance = this;
+            instance = new UIManager();
         return instance;
     }
 
-    public void Init()
+    public void InitPanel()
     {
         for(int i = 0;i < transform.childCount;i++)
         {
@@ -50,13 +46,13 @@ public class UIManager : MonoBehaviour {
         }
     }
 
-    public void ClosePanel(GameObject panel)
+    public void ClosePanel(string name)
     {
-        panel.SetActive(false);
+        UIObjects[name].gameObject.SetActive(false);
     }
 
-    public void OpenPanel(GameObject panel)
+    public void OpenPanel(string name)
     {
-        panel.SetActive(true);
+        UIObjects[name].gameObject.SetActive(true);
     }
 }
