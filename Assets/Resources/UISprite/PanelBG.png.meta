@@ -1,0 +1,460 @@
+fileFormatVersion: 2
+guid: c8723367ca5424f46a40493b0329a2d3
+timeCreated: 1523440125
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Button_0
+    21300002: Button_1
+    21300004: Button_2
+    21300006: Button_3
+    21300008: Button_4
+    21300010: Button_5
+    21300012: Button_6
+    21300014: Button_7
+    21300016: Button_8
+    21300018: Button_9
+    21300020: Button_10
+    21300022: Button_11
+    21300024: Button_12
+    21300026: Button_13
+    21300028: Button_14
+    21300030: Button_15
+    21300032: Button_16
+    21300034: Button_17
+    21300036: Button_18
+    21300038: Button_19
+    21300040: Button_20
+    21300042: Button_21
+    21300044: Button_22
+    21300046: Button_23
+    21300048: Button_24
+    21300050: Button_25
+    21300052: Button_26
+    21300054: Button_27
+    21300056: Button_28
+    21300058: Button_29
+    21300060: Button_30
+    21300062: Button_31
+    21300064: Button_32
+    21300066: Button_33
+    21300068: Button_34
+    21300070: Button_35
+    21300072: Button_36
+    21300074: Button_37
+    21300076: Button_38
+    21300078: Button_39
+    21300080: Button_40
+    21300082: Button_41
+    21300084: Button_42
+    21300086: Button_43
+    21300088: Button_44
+    21300090: Button_45
+    21300092: Button_46
+    21300094: Button_47
+    21300096: Button_48
+    21300098: Button_49
+    21300100: Button_50
+    21300102: Button_51
+    21300104: Button_52
+    21300106: Button_53
+    21300108: Button_54
+    21300110: Button_55
+    21300112: Button_56
+    21300114: Button_57
+    21300116: Button_58
+    21300118: Button_59
+    21300120: Button_60
+    21300122: Button_61
+    21300124: Button_62
+    21300126: Button_63
+    21300128: Button_64
+    21300130: Button_65
+    21300132: Button_66
+    21300134: Button_67
+    21300136: Button_68
+    21300138: Button_69
+    21300140: Button_70
+    21300142: Button_71
+    21300144: Button_72
+    21300146: Button_73
+    21300148: Button_74
+    21300150: Button_75
+    21300152: Button_76
+    21300154: Button_77
+    21300156: Button_78
+    21300158: Button_79
+    21300160: Button_80
+    21300162: Button_81
+    21300164: Button_82
+    21300166: Button_83
+    21300168: Button_84
+    21300170: Button_85
+    21300172: Button_86
+    21300174: Button_87
+    21300176: Button_88
+    21300178: Button_89
+    21300180: Button_90
+    21300182: Button_91
+    21300184: Button_92
+    21300186: Button_93
+    21300188: Button_94
+    21300190: Button_95
+    21300192: Button_96
+    21300194: Button_97
+    21300196: Button_98
+    21300198: Button_99
+    21300200: Button_100
+    21300202: Button_101
+    21300204: Button_102
+    21300206: Button_103
+    21300208: Button_104
+    21300210: Button_105
+    21300212: Button_106
+    21300214: Button_107
+    21300216: Button_108
+    21300218: Button_109
+    21300220: Button_110
+    21300222: Button_111
+    21300224: Button_112
+    21300226: Button_113
+    21300228: Button_114
+    21300230: Button_115
+    21300232: Button_116
+    21300234: Button_117
+    21300236: Button_118
+    21300238: Button_119
+    21300240: Button_120
+    21300242: Button_121
+    21300244: Button_122
+    21300246: Button_123
+    21300248: Button_124
+    21300250: Button_125
+    21300252: Button_126
+    21300254: Button_127
+    21300256: Button_128
+    21300258: Button_129
+    21300260: Button_130
+    21300262: Button_131
+    21300264: Button_132
+    21300266: Button_133
+    21300268: Button_134
+    21300270: Button_135
+    21300272: Button_136
+    21300274: Button_137
+    21300276: Button_138
+    21300278: Button_139
+    21300280: Button_140
+    21300282: Button_141
+    21300284: Button_142
+    21300286: Button_143
+    21300288: Button_144
+    21300290: Button_145
+    21300292: Button_146
+    21300294: Button_147
+    21300296: Button_148
+    21300298: Button_149
+    21300300: Button_150
+    21300302: Button_151
+    21300304: Button_152
+    21300306: Button_153
+    21300308: Button_154
+    21300310: Button_155
+    21300312: Button_156
+    21300314: Button_157
+    21300316: Button_158
+    21300318: Button_159
+    21300320: Button_160
+    21300322: Button_161
+    21300324: Button_162
+    21300326: Button_163
+    21300328: Button_164
+    21300330: Button_165
+    21300332: Button_166
+    21300334: Button_167
+    21300336: Button_168
+    21300338: Button_169
+    21300340: Button_170
+    21300342: Button_171
+    21300344: Button_172
+    21300346: Button_173
+    21300348: Button_174
+    21300350: Button_175
+    21300352: Button_176
+    21300354: Button_177
+    21300356: Button_178
+    21300358: Button_179
+    21300360: Button_180
+    21300362: normal
+    21300364: hover
+    21300366: click
+    21300368: locked
+    21300370: pb1
+    21300372: pb2
+    21300374: pb3
+    21300376: pb4
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 64
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: normal
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 218
+        width: 406
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -196, y: 80}
+        - {x: -203, y: 54}
+        - {x: -203, y: -74}
+        - {x: -199, y: -80}
+        - {x: 195, y: -80}
+        - {x: 203, y: -43}
+        - {x: 203, y: 46}
+        - {x: 180, y: 80}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: hover
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 218
+        width: 407
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -154.5, y: 80}
+        - {x: -201.5, y: 57}
+        - {x: -203.5, y: 46}
+        - {x: -203.5, y: -40}
+        - {x: -175.5, y: -80}
+        - {x: 170.5, y: -80}
+        - {x: 203.5, y: -57}
+        - {x: 203.5, y: 56}
+        - {x: 160.5, y: 80}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: click
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 218
+        width: 406
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -193, y: 80}
+        - {x: -203, y: 79}
+        - {x: -203, y: -45}
+        - {x: -178, y: -80}
+        - {x: 171, y: -80}
+        - {x: 203, y: -56}
+        - {x: 203, y: 53}
+        - {x: 188, y: 80}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: locked
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 218
+        width: 406
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 161, y: 80}
+        - {x: -174, y: 80}
+        - {x: -203, y: 63}
+        - {x: -203, y: -49}
+        - {x: -187, y: -80}
+        - {x: 172, y: -80}
+        - {x: 203, y: -45}
+        - {x: 203, y: 42}
+        - {x: 196, y: 65}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pb1
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 18
+        width: 406
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -192, y: 80}
+        - {x: -203, y: 59}
+        - {x: -203, y: -80}
+        - {x: 199, y: -80}
+        - {x: 203, y: -67}
+        - {x: 203, y: 80}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pb2
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 18
+        width: 407
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -190.5, y: 80}
+        - {x: -203.5, y: 55}
+        - {x: -203.5, y: -39}
+        - {x: -186.5, y: -80}
+        - {x: 177.5, y: -80}
+        - {x: 203.5, y: -56}
+        - {x: 203.5, y: 80}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pb3
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 18
+        width: 406
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 44, y: 50, z: 43, w: 47}
+      outline:
+      - - {x: 181, y: 80}
+        - {x: -185, y: 80}
+        - {x: -203, y: 66}
+        - {x: -203, y: -55}
+        - {x: -191, y: -80}
+        - {x: 162, y: -80}
+        - {x: 196, y: -67}
+        - {x: 203, y: -40}
+        - {x: 203, y: 52}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pb4
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 18
+        width: 406
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -203, y: 80}
+        - {x: -203, y: -80}
+        - {x: 187, y: -80}
+        - {x: 203, y: -54}
+        - {x: 203, y: 48}
+        - {x: 180, y: 80}
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

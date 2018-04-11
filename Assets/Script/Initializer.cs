@@ -15,6 +15,24 @@ public class Initializer : MonoBehaviour {
         AVObject gameScore = new AVObject("GameScore");
         gameScore["score"] = 1;
         gameScore["playerName"] = "KK";
+        /*查询测试完成
+        AVQuery<AVObject> query = new AVQuery<AVObject>("GameScore").WhereEqualTo("score", 1);
+        query.FindAsync().ContinueWith(t =>
+        {
+            if(t.IsFaulted)
+            {
+                Debug.LogError("查询错误");
+            }
+            else
+            {
+                foreach (var item in t.Result)
+                {
+                    Debug.Log(item["playerName"] + " : " + item["score"]);
+                }
+            }
+        }
+         );
+         */
     }
 	
 	// Update is called once per frame
