@@ -328,6 +328,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\GameManager.cs" />
     <Compile Include="Assets\Script\Initializer.cs" />
     <Compile Include="Assets\Script\UIScript\GameOverPanel.cs" />
     <Compile Include="Assets\Script\UIScript\GamingPanel.cs" />

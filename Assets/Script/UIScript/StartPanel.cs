@@ -26,12 +26,11 @@ public class StartPanel : MonoBehaviour,IPointerClickHandler{
     private void OnItemBtnClick()
     {
         UIManager.GetInstance().OpenPanel("SkillPanel");
-        
     }
 
     void IPointerClickHandler.OnPointerClick(PointerEventData eventData)
     {
-        if(eventData.pointerPress.name == gameObject.name)
+        if(eventData.pointerPress.name == gameObject.name && GameManager.curState == GameState.GameStart)
         {
             Debug.Log("游戏开始！");
         }

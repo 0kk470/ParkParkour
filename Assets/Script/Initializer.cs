@@ -8,6 +8,10 @@ using UnityEngine;
 /// </summary>
 public class Initializer : MonoBehaviour {
 
+    private void Awake()
+    {
+        GameManager.Init();
+    }
     // Use this for initialization
     void Start ()
     {

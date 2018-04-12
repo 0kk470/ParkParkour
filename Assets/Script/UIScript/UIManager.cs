@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using DG.Tweening;
 /// <summary>
 /// 单例UI管理类
 /// </summary>
+
+
 public class UIManager : MonoBehaviour {
     private static UIManager instance;
     private Dictionary<string, Transform> UIObjects;
@@ -35,24 +37,27 @@ public class UIManager : MonoBehaviour {
     {
         for(int i = 0;i < transform.childCount;i++)
         {
-            if(i == 0)
+            var panel = transform.GetChild(i);
+            if (i == 0)
             {
-                transform.GetChild(i).gameObject.SetActive(true);
+                panel.localScale = Vector3.one;
             }
             else
             {
-                transform.GetChild(i).gameObject.SetActive(false);
+                panel.localScale = Vector3.zero;
             }
+            if(!panel.gameObject.activeInHierarchy)
+                panel.gameObject.SetActive(true);
         }
     }
 
     public void ClosePanel(string name)
     {
-        UIObjects[name].gameObject.SetActive(false);
+        UIObjects[name].DOScale(0, 0.1f);
     }
 
     public void OpenPanel(string name)
     {
-        UIObjects[name].gameObject.SetActive(true);
+        UIObjects[name].DOScale(1, 0.1f);
     }
 }
