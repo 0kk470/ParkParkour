@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
-public class StartPanel : MonoBehaviour {
+public class StartPanel : MonoBehaviour,IPointerClickHandler{
 
 	// Use this for initialization
 	void Start ()
@@ -25,5 +26,14 @@ public class StartPanel : MonoBehaviour {
     private void OnItemBtnClick()
     {
         UIManager.GetInstance().OpenPanel("SkillPanel");
+        
+    }
+
+    void IPointerClickHandler.OnPointerClick(PointerEventData eventData)
+    {
+        if(eventData.pointerPress.name == gameObject.name)
+        {
+            Debug.Log("游戏开始！");
+        }
     }
 }

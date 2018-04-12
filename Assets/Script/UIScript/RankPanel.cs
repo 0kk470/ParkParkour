@@ -1,16 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RankPanel : MonoBehaviour {
 
 	// Use this for initialization
-	void Start () {
-		
+	void Start ()
+    {
+        transform.Find("bg/close_btn").GetComponent<Button>().onClick.AddListener(OnCloseBtnClick);
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+	private void OnCloseBtnClick()
+    {
+        UIManager.GetInstance().ClosePanel(gameObject.name);
+    }
 }
