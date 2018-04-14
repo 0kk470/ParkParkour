@@ -5,7 +5,11 @@ using DG.Tweening;
 /// <summary>
 /// 单例UI管理类
 /// </summary>
-
+public enum UITweenType
+{
+    Scale,
+    Fade,
+}
 
 public class UIManager : MonoBehaviour {
     private static UIManager instance;
@@ -51,13 +55,29 @@ public class UIManager : MonoBehaviour {
         }
     }
 
-    public void ClosePanel(string name)
+    public void ClosePanel(string name, UITweenType type)
     {
-        UIObjects[name].DOScale(0, 0.1f);
+        switch(type)
+        {
+            case UITweenType.Scale:
+                UIObjects[name].DOScale(0, 0.1f);
+                break;
+            case UITweenType.Fade:
+                UIObjects[name].GetComponent<CanvasGroup>().DOFade(0, 1f);
+                break;
+        }
     }
 
-    public void OpenPanel(string name)
+    public void OpenPanel(string name, UITweenType type)
     {
-        UIObjects[name].DOScale(1, 0.1f);
+        switch (type)
+        {
+            case UITweenType.Scale:
+                UIObjects[name].DOScale(1, 0.1f);
+                break;
+            case UITweenType.Fade:
+                UIObjects[name].GetComponent<CanvasGroup>().DOFade(1, 1f);
+                break;
+        }
     }
 }

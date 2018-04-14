@@ -22,7 +22,7 @@ public class SettingPanel : MonoBehaviour {
 
     private void OnCloseBtnClick()
     {
-        UIManager.GetInstance().ClosePanel(gameObject.name);
+        UIManager.GetInstance().ClosePanel(gameObject.name, UITweenType.Scale);
     }
 
     private void OnMakerValueChanged(bool check)
