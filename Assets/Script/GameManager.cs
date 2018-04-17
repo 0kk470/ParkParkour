@@ -6,17 +6,17 @@ using UnityEngine;
 public enum GameState
 {
     GameStart,
-    GameOther,
     Gaming,
     GameOver
 }
 
 public class GameManager{
-    public event EventHandler OnGameStateChange;
+    public event EventHandler OnGameStart;
+    public event EventHandler OnGameOver;
     public static GameState curState;
-    private GameManager instance;
+    private static GameManager instance;
 
-    public GameManager GetInstance()
+    public static GameManager GetInstance()
     {
         if (instance == null)
             instance = new GameManager();
@@ -27,11 +27,9 @@ public class GameManager{
         curState = GameState.GameStart;
 	}
 
-    public void ChangeState(object sender,EventArgs e)
+    public void StartGame()
     {
-        if(OnGameStateChange != null)
-          OnGameStateChange(sender, e);
+        if (OnGameStart != null)
+            OnGameStart(this,EventArgs.Empty);
     }
-
-
 }

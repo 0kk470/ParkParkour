@@ -10,17 +10,17 @@ public class Initializer : MonoBehaviour {
 
     private void Awake()
     {
+        AVObject.RegisterSubclass<PlayerData>();
         GameManager.Init();
     }
     // Use this for initialization
     void Start ()
     {
+        List<PlayerData> players = new List<PlayerData>(20);
         //LeanCloud Test Codes
-        AVObject gameScore = new AVObject("GameScore");
-        gameScore["score"] = 1;
-        gameScore["playerName"] = "KK";
+        //Task save = gameScore.SaveAsync();
         /*查询测试完成
-        AVQuery<AVObject> query = new AVQuery<AVObject>("GameScore").WhereEqualTo("score", 1);
+        AVQuery<AVObject> query = new AVQuery<AVObject>("PlayerData").WhereEqualTo("score", 1);
         query.FindAsync().ContinueWith(t =>
         {
             if(t.IsFaulted)
@@ -38,9 +38,9 @@ public class Initializer : MonoBehaviour {
          );
          */
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update () {
 		
 	}
 }

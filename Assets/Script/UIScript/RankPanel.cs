@@ -3,11 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class RankPanel : MonoBehaviour {
+public class RankPanel : MonoBehaviour, UIBase
+{
     private Button RefreshBtn;
     private Button CloseBtn;
-	// Use this for initialization
-	void Start ()
+    void OnEnable()
+    {
+        LoadData();
+    }
+    // Use this for initialization
+    void Start ()
     {
         transform.Find("bg/close_btn").GetComponent<Button>().onClick.AddListener(OnCloseBtnClick);
         RefreshBtn = transform.Find("bg/refresh_btn").GetComponent<Button>();
@@ -30,5 +35,9 @@ public class RankPanel : MonoBehaviour {
         yield return new WaitForSeconds(2f);
         Debug.Log("Refresh data..");
         RefreshBtn.interactable = true;
+    }
+
+    public void LoadData()
+    {
     }
 }

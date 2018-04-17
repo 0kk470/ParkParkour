@@ -1,0 +1,975 @@
+fileFormatVersion: 2
+guid: 1e7402151c1440245a8324501df0124e
+timeCreated: 1523973378
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Roach_0
+    21300002: Roach_1
+    21300004: Roach_2
+    21300006: Roach_3
+    21300008: Roach_4
+    21300010: Roach_5
+    21300012: Roach_6
+    21300014: Roach_7
+    21300016: Roach_8
+    21300018: Roach_9
+    21300020: Roach_10
+    21300022: Roach_11
+    21300024: Roach_12
+    21300026: Roach_13
+    21300028: Roach_14
+    21300030: Roach_15
+    21300032: Roach_16
+    21300034: Roach_17
+    21300036: Roach_18
+    21300038: Roach_19
+    21300040: Roach_20
+    21300042: Roach_21
+    21300044: Roach_22
+    21300046: Roach_23
+    21300048: Roach_24
+    21300050: Roach_25
+    21300052: Roach_26
+    21300054: Roach_27
+    21300056: Roach_28
+    21300058: Roach_29
+    21300060: Roach_30
+    21300062: Roach_31
+    21300064: Roach_32
+    21300066: Roach_33
+    21300068: Roach_34
+    21300070: Roach_35
+    21300072: Roach_36
+    21300074: Roach_37
+    21300076: Roach_38
+    21300078: Roach_39
+    21300080: Roach_40
+    21300082: Roach_41
+    21300084: Roach_42
+    21300086: Roach_43
+    21300088: Roach_44
+    21300090: Roach_45
+    21300092: Roach_46
+    21300094: Roach_47
+    21300096: Roach_48
+    21300098: Roach_49
+    21300100: Roach_50
+    21300102: Roach_51
+    21300104: Roach_52
+    21300106: Roach_53
+    21300108: Roach_54
+    21300110: Roach_55
+    21300112: Roach_56
+    21300114: Roach_57
+    21300116: Roach_58
+    21300118: Roach_59
+    21300120: Roach_60
+    21300122: Roach_61
+    21300124: Roach_62
+    21300126: Roach_63
+    21300128: Roach_64
+    21300130: Roach_65
+    21300132: Roach_66
+    21300134: Roach_67
+    21300136: Roach_68
+    21300138: Roach_69
+    21300140: Roach_70
+    21300142: Roach_71
+    21300144: Roach_72
+    21300146: Roach_73
+    21300148: Roach_74
+    21300150: Roach_75
+    21300152: Roach_76
+    21300154: Roach_77
+    21300156: Roach_78
+    21300158: Roach_79
+    21300160: Roach_80
+    21300162: Roach_81
+    21300164: Roach_82
+    21300166: Roach_83
+    21300168: Roach_84
+    21300170: Roach_85
+    21300172: Roach_86
+    21300174: Roach_87
+    21300176: Roach_88
+    21300178: Roach_89
+    21300180: Roach_90
+    21300182: Roach_91
+    21300184: Roach_92
+    21300186: Roach_93
+    21300188: Roach_94
+    21300190: Roach_95
+    21300192: Roach_96
+    21300194: Roach_97
+    21300196: Roach_98
+    21300198: Roach_99
+    21300200: Roach_100
+    21300202: Roach_101
+    21300204: Roach_102
+    21300206: Roach_103
+    21300208: Roach_104
+    21300210: Roach_105
+    21300212: Roach_106
+    21300214: Roach_107
+    21300216: Roach_108
+    21300218: Roach_109
+    21300220: Roach_110
+    21300222: Roach_111
+    21300224: Roach_112
+    21300226: Roach_113
+    21300228: Roach_114
+    21300230: Roach_115
+    21300232: Roach_116
+    21300234: Roach_117
+    21300236: Roach_118
+    21300238: Roach_119
+    21300240: Roach_120
+    21300242: Roach_121
+    21300244: Roach_122
+    21300246: Roach_123
+    21300248: Roach_124
+    21300250: Roach_125
+    21300252: Roach_126
+    21300254: Roach_127
+    21300256: Roach_128
+    21300258: Roach_129
+    21300260: Roach_130
+    21300262: Roach_131
+    21300264: Roach_132
+    21300266: Roach_133
+    21300268: Roach_134
+    21300270: Roach_135
+    21300272: Roach_136
+    21300274: Roach_137
+    21300276: Roach_138
+    21300278: Roach_139
+    21300280: Roach_140
+    21300282: Roach_141
+    21300284: Roach_142
+    21300286: Roach_143
+    21300288: Roach_144
+    21300290: Roach_145
+    21300292: Roach_146
+    21300294: Roach_147
+    21300296: Roach_148
+    21300298: Roach_149
+    21300300: Roach_150
+    21300302: Roach_151
+    21300304: Roach_152
+    21300306: Roach_153
+    21300308: Roach_154
+    21300310: Roach_155
+    21300312: Roach_156
+    21300314: Roach_157
+    21300316: Roach_158
+    21300318: Roach_159
+    21300320: Roach_160
+    21300322: Roach_161
+    21300324: Roach_162
+    21300326: Roach_163
+    21300328: Roach_164
+    21300330: Roach_165
+    21300332: Roach_166
+    21300334: Roach_167
+    21300336: Roach_168
+    21300338: Roach_169
+    21300340: Roach_170
+    21300342: Roach_171
+    21300344: Roach_172
+    21300346: Roach_173
+    21300348: Roach_174
+    21300350: Roach_175
+    21300352: Roach_176
+    21300354: Roach_177
+    21300356: Roach_178
+    21300358: Roach_179
+    21300360: Roach_180
+    21300362: Roach_181
+    21300364: Roach_182
+    21300366: Roach_183
+    21300368: Roach_184
+    21300370: Roach_185
+    21300372: Roach_186
+    21300374: Roach_187
+    21300376: Roach_188
+    21300378: Roach_189
+    21300380: Roach_190
+    21300382: Roach_191
+    21300384: Roach_192
+    21300386: Roach_193
+    21300388: Roach_194
+    21300390: Roach_195
+    21300392: Roach_196
+    21300394: Roach_197
+    21300396: Roach_198
+    21300398: Roach_199
+    21300400: Roach_200
+    21300402: Roach_201
+    21300404: Roach_202
+    21300406: Roach_203
+    21300408: Roach_204
+    21300410: Roach_205
+    21300412: Roach_206
+    21300414: Roach_207
+    21300416: Roach_208
+    21300418: Roach_209
+    21300420: Roach_210
+    21300422: Roach_211
+    21300424: Roach_212
+    21300426: Roach_213
+    21300428: Roach_214
+    21300430: Roach_215
+    21300432: Roach_216
+    21300434: Roach_217
+    21300436: Roach_218
+    21300438: Roach_219
+    21300440: Roach_220
+    21300442: Roach_221
+    21300444: Roach_222
+    21300446: Roach_223
+    21300448: Roach_224
+    21300450: Roach_225
+    21300452: Roach_226
+    21300454: Roach_227
+    21300456: Roach_228
+    21300458: Roach_229
+    21300460: Roach_230
+    21300462: Roach_231
+    21300464: Roach_232
+    21300466: Roach_233
+    21300468: Roach_234
+    21300470: Roach_235
+    21300472: Roach_236
+    21300474: Roach_237
+    21300476: Roach_238
+    21300478: Roach_239
+    21300480: Roach_240
+    21300482: Roach_241
+    21300484: Roach_242
+    21300486: Roach_243
+    21300488: Roach_244
+    21300490: Roach_245
+    21300492: Roach_246
+    21300494: Roach_247
+    21300496: Roach_248
+    21300498: Roach_249
+    21300500: Roach_250
+    21300502: Roach_251
+    21300504: Roach_252
+    21300506: Roach_253
+    21300508: Roach_254
+    21300510: Roach_255
+    21300512: Roach_256
+    21300514: Roach_257
+    21300516: Roach_258
+    21300518: Roach_259
+    21300520: Roach_260
+    21300522: Roach_261
+    21300524: Roach_262
+    21300526: Roach_263
+    21300528: Roach_264
+    21300530: Roach_265
+    21300532: Roach_266
+    21300534: Roach_267
+    21300536: Roach_268
+    21300538: Roach_269
+    21300540: Roach_270
+    21300542: Roach_271
+    21300544: Roach_272
+    21300546: Roach_273
+    21300548: Roach_274
+    21300550: Roach_275
+    21300552: Roach_276
+    21300554: Roach_277
+    21300556: Roach_278
+    21300558: Roach_279
+    21300560: Roach_280
+    21300562: Roach_281
+    21300564: Roach_282
+    21300566: Roach_283
+    21300568: Roach_284
+    21300570: Roach_285
+    21300572: Roach_286
+    21300574: Roach_287
+    21300576: Roach_288
+    21300578: Roach_289
+    21300580: Roach_290
+    21300582: Roach_291
+    21300584: Roach_292
+    21300586: Roach_293
+    21300588: Roach_294
+    21300590: Roach_295
+    21300592: Roach_296
+    21300594: Roach_297
+    21300596: Roach_298
+    21300598: Roach_299
+    21300600: Roach_300
+    21300602: Roach_301
+    21300604: Roach_302
+    21300606: Roach_303
+    21300608: Roach_304
+    21300610: Roach_305
+    21300612: Roach_306
+    21300614: Roach_307
+    21300616: Roach_308
+    21300618: Roach_309
+    21300620: Roach_310
+    21300622: Roach_311
+    21300624: Roach_312
+    21300626: Roach_313
+    21300628: Roach_314
+    21300630: Roach_315
+    21300632: Roach_316
+    21300634: Roach_317
+    21300636: Roach_318
+    21300638: Roach_319
+    21300640: Roach_320
+    21300642: Roach_321
+    21300644: Roach_322
+    21300646: Roach_323
+    21300648: Roach_324
+    21300650: Roach_325
+    21300652: Roach_326
+    21300654: Roach_327
+    21300656: Roach_328
+    21300658: Roach_329
+    21300660: Roach_330
+    21300662: Roach_331
+    21300664: Roach_332
+    21300666: Roach_333
+    21300668: Roach_334
+    21300670: Roach_335
+    21300672: Roach_336
+    21300674: Roach_337
+    21300676: Roach_338
+    21300678: Roach_339
+    21300680: Roach_340
+    21300682: Roach_341
+    21300684: Roach_342
+    21300686: Roach_343
+    21300688: Roach_344
+    21300690: Roach_345
+    21300692: Roach_346
+    21300694: Roach_347
+    21300696: Roach_348
+    21300698: Roach_349
+    21300700: Roach_350
+    21300702: Roach_351
+    21300704: Roach_352
+    21300706: Roach_353
+    21300708: Roach_354
+    21300710: Roach_355
+    21300712: Roach_356
+    21300714: Roach_357
+    21300716: Roach_358
+    21300718: Roach_359
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Roach_0
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 1819
+        width: 154
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Roach_1
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 1819
+        width: 154
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Roach_2
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 1819
+        width: 154
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Roach_3
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 1819
+        width: 154
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Roach_4
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 1819
+        width: 154
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Roach_5
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 1819
+        width: 154
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Roach_6
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 1819
+        width: 154
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Roach_7
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 1570
+        width: 154
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Roach_8
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 1570
+        width: 154
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Roach_9
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 1570
+        width: 154
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Roach_10
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 1570
+        width: 154
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Roach_11
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 1570
+        width: 154
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Roach_12
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 1570
+        width: 154
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Roach_13
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 1570
+        width: 154
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Roach_14
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 1321
+        width: 154
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Roach_15
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 1314
+        width: 154
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Roach_16
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 1304
+        width: 154
+        height: 169
+      alignment: 9
+      pivot: {x: 0.2688793, y: 0.44383827}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Roach_17
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 1288
+        width: 220
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Roach_18
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 1288
+        width: 246
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Roach_19
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 1293
+        width: 244
+        height: 202
+      alignment: 9
+      pivot: {x: 0.5308156, y: 0.22982517}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Roach_20
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 1291
+        width: 261
+        height: 202
+      alignment: 9
+      pivot: {x: 0.39214367, y: 0.4060264}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Roach_21
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 1025
+        width: 168
+        height: 169
+      alignment: 9
+      pivot: {x: 0.5141244, y: 0.42979872}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Roach_22
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 1015
+        width: 178
+        height: 169
+      alignment: 9
+      pivot: {x: 0.5143812, y: 0.51404095}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Roach_23
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1022
+        width: 154
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Roach_24
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 1025
+        width: 154
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Roach_25
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 1029
+        width: 154
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Roach_26
+      rect:
+        serializedVersion: 2
+        x: 1316
+        y: 1020
+        width: 218
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Roach_27
+      rect:
+        serializedVersion: 2
+        x: 1553
+        y: 1015
+        width: 244
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Roach_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 756
+        width: 250
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Roach_29
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 794
+        width: 230
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Roach_30
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 790
+        width: 228
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Roach_31
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 797
+        width: 237
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Roach_32
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 792
+        width: 259
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Roach_33
+      rect:
+        serializedVersion: 2
+        x: 1546
+        y: 792
+        width: 270
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Roach_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 545
+        width: 219
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Roach_35
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 540
+        width: 238
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Roach_36
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 761
+        width: 261
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

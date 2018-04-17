@@ -2,10 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PausePanel : MonoBehaviour {
+public class PausePanel : MonoBehaviour, UIBase
+{
+    public void LoadData()
+    {
+    }
 
-	// Use this for initialization
-	void Start () {
+    void OnEnable()
+    {
+        LoadData();
+    }
+    // Use this for initialization
+    void Start () {
 		
 	}
 	

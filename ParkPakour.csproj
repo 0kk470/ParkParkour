@@ -278,6 +278,9 @@
     <Reference Include="DOTweenEditor">
       <HintPath>Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
     </Reference>
+    <Reference Include="JsonFx.Json">
+      <HintPath>Assets/Plugins/JsonFx/JsonFx.Json.dll</HintPath>
+    </Reference>
     <Reference Include="AssemblyLister">
       <HintPath>Assets/Plugins/LeanCloud/AssemblyLister.dll</HintPath>
     </Reference>
@@ -328,8 +331,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\DataManager.cs" />
     <Compile Include="Assets\Script\GameManager.cs" />
     <Compile Include="Assets\Script\Initializer.cs" />
+    <Compile Include="Assets\Script\Model\PlayerData.cs" />
+    <Compile Include="Assets\Script\UIManager.cs" />
     <Compile Include="Assets\Script\UIScript\GameOverPanel.cs" />
     <Compile Include="Assets\Script\UIScript\GamingPanel.cs" />
     <Compile Include="Assets\Script\UIScript\PausePanel.cs" />
@@ -337,7 +343,6 @@
     <Compile Include="Assets\Script\UIScript\SettingPanel.cs" />
     <Compile Include="Assets\Script\UIScript\SkillPanel.cs" />
     <Compile Include="Assets\Script\UIScript\StartPanel.cs" />
-    <Compile Include="Assets\Script\UIScript\UIManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Plugins\Demigiant\DOTween\DOTween.XML" />

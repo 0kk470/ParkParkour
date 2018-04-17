@@ -4,9 +4,16 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using DG.Tweening;
-public class StartPanel : MonoBehaviour,IPointerClickHandler{
+using System;
+
+public class StartPanel : MonoBehaviour,IPointerClickHandler, UIBase
+{
     private Text StartText;
     private Transform Title;
+    void OnEnable()
+    {
+        LoadData();
+    }
     // Use this for initialization
 
     void Start ()
@@ -45,8 +52,13 @@ public class StartPanel : MonoBehaviour,IPointerClickHandler{
     {
         if(eventData.pointerPress.name == gameObject.name && GameManager.curState == GameState.GameStart)
         {
-            Debug.Log("游戏开始！");
+            Debug.Log("游戏开始");
             UIManager.GetInstance().ClosePanel("StartPanel", UITweenType.Fade);
+            GameManager.GetInstance().StartGame();
         }
+    }
+
+    public void LoadData()
+    {
     }
 }
