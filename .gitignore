@@ -3,7 +3,8 @@
 # =============== #
 Temp/
 Library/
- 
+UnityPackageManager/
+.vs/
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
 # ===================================== #
