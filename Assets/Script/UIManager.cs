@@ -65,10 +65,10 @@ public class UIManager : MonoBehaviour {
         switch(type)
         {
             case UITweenType.Scale:
-                UIObjects[name].DOScale(0, 0.1f);
+                UIObjects[name].DOScale(0, 0.1f).onComplete = () => { UIObjects[name].gameObject.SetActive(false); };
                 break;
             case UITweenType.Fade:
-                UIObjects[name].GetComponent<CanvasGroup>().DOFade(0, 1f);
+                UIObjects[name].GetComponent<CanvasGroup>().DOFade(0, 1f).onComplete = () => { UIObjects[name].gameObject.SetActive(false); };
                 break;
         }
     }

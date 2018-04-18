@@ -16,7 +16,7 @@ public class Initializer : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-        List<PlayerData> players = new List<PlayerData>(20);
+        //List<PlayerData> players = new List<PlayerData>(20);
         //LeanCloud Test Codes
         //Task save = gameScore.SaveAsync();
         /*查询测试完成

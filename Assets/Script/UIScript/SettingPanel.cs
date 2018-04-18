@@ -51,5 +51,6 @@ public class SettingPanel : MonoBehaviour, UIBase
 
     public void LoadData()
     {
+        Debug.Log("加载数据");
     }
 }

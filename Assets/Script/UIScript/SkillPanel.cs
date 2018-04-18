@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class SkillPanel : MonoBehaviour, UIBase
 {
     void OnEnable()
@@ -10,7 +10,7 @@ public class SkillPanel : MonoBehaviour, UIBase
     }
     // Use this for initialization
     void Start () {
-		
+        transform.Find("close_btn").GetComponent<Button>().onClick.AddListener(OnCloseBtnClick);
 	}
 	
 	// Update is called once per frame
