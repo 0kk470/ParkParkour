@@ -1,67 +1,66 @@
 fileFormatVersion: 2
-guid: e9518e63e0af4e84ca75842668ed1519
-timeCreated: 1523974569
+guid: 635befb15288e21449248b254031cd66
+timeCreated: 1524155662
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Zealot_1
-    21300002: Zealot_2
-    21300004: Zealot_3
-    21300006: Zealot_4
-    21300008: Zealot_5
-    21300010: Zealot_7
-    21300012: Zealot_8
-    21300014: Zealot_9
-    21300016: Zealot_11
-    21300018: Zealot_12
-    21300020: Zealot_13
-    21300022: Zealot_14
-    21300024: Zealot_15
-    21300026: Zealot_16
-    21300028: Zealot_17
-    21300030: Zealot_18
-    21300032: Zealot_19
-    21300034: Zealot_20
-    21300036: Zealot_21
-    21300038: Zealot_26
-    21300040: Zealot_27
-    21300042: Zealot_33
-    21300044: Zealot_34
-    21300046: Zealot_35
-    21300048: Zealot_38
-    21300050: Zealot_40
-    21300052: Zealot_41
-    21300054: Zealot_42
-    21300056: Zealot_43
-    21300058: Zealot_44
-    21300060: Zealot_45
-    21300062: Zealot_46
-    21300064: Zealot_47
-    21300066: Zealot_48
-    21300068: Zealot_49
-    21300070: Zealot_50
-    21300072: Zealot_51
-    21300074: Zealot_53
-    21300076: Zealot_55
-    21300078: Zealot_57
-    21300080: Zealot_59
+    21300000: Zealot_0
+    21300002: Zealot_1
+    21300004: Zealot_2
+    21300006: Zealot_3
+    21300008: Zealot_4
+    21300010: Zealot_5
+    21300012: Zealot_6
+    21300014: Zealot_7
+    21300016: Zealot_9
+    21300018: Zealot_10
+    21300020: Zealot_11
+    21300022: Zealot_12
+    21300024: Zealot_13
+    21300026: Zealot_14
+    21300028: Zealot_15
+    21300030: Zealot_16
+    21300032: Zealot_17
+    21300034: Zealot_18
+    21300036: Zealot_19
+    21300038: Zealot_20
+    21300040: Zealot_21
+    21300042: Zealot_22
+    21300044: Zealot_23
+    21300046: Zealot_24
+    21300048: Zealot_30
+    21300050: Zealot_33
+    21300052: Zealot_34
+    21300054: Zealot_35
+    21300056: Zealot_36
+    21300058: Zealot_37
+    21300060: Zealot_31
+    21300062: Zealot_39
+    21300064: Zealot_40
+    21300066: Zealot_41
+    21300068: Zealot_42
+    21300070: Zealot_55
+    21300072: Zealot_56
+    21300074: Zealot_57
+    21300076: Zealot_58
+    21300078: Zealot_59
+    21300080: Zealot_60
     21300082: Zealot_61
-    21300084: Zealot_63
-    21300086: Zealot_64
-    21300088: Zealot_65
-    21300090: Zealot_66
-    21300092: Zealot_67
-    21300094: Zealot_68
-    21300096: Zealot_69
-    21300098: Zealot_70
-    21300100: Zealot_71
-    21300102: Zealot_72
-    21300104: Zealot_73
-    21300106: Zealot_74
-    21300108: Zealot_75
-    21300110: Zealot_76
-    21300112: Zealot_77
-    21300114: Zealot_78
+    21300084: Zealot_62
+    21300086: Zealot_63
+    21300088: Zealot_64
+    21300090: Zealot_65
+    21300092: Zealot_66
+    21300094: Zealot_67
+    21300096: Zealot_68
+    21300098: Zealot_69
+    21300100: Zealot_70
+    21300102: Zealot_43
+    21300104: Zealot_44
+    21300106: Zealot_45
+    21300108: Zealot_46
+    21300110: Zealot_47
+    21300112: Zealot_48
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -89,7 +88,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 1
     aniso: -1
     mipBias: -1
     wrapU: 1
@@ -99,12 +98,12 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 1
+  spriteExtrude: 0
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 96
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -137,26 +136,40 @@ TextureImporter:
   - buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 47
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+      name: Zealot_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1843
+        width: 135
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
       name: Zealot_1
       rect:
         serializedVersion: 2
-        x: 21
+        x: 337
         y: 1843
-        width: 138
+        width: 89
         height: 125
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -165,12 +178,12 @@ TextureImporter:
       name: Zealot_2
       rect:
         serializedVersion: 2
-        x: 337
+        x: 517
         y: 1843
-        width: 89
-        height: 125
+        width: 154
+        height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -179,12 +192,12 @@ TextureImporter:
       name: Zealot_3
       rect:
         serializedVersion: 2
-        x: 517
+        x: 834
         y: 1843
-        width: 154
+        width: 93
         height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -193,12 +206,12 @@ TextureImporter:
       name: Zealot_4
       rect:
         serializedVersion: 2
-        x: 834
+        x: 1027
         y: 1843
-        width: 93
+        width: 156
         height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -207,12 +220,26 @@ TextureImporter:
       name: Zealot_5
       rect:
         serializedVersion: 2
-        x: 1027
+        x: 1282
         y: 1843
-        width: 156
+        width: 157
         height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zealot_6
+      rect:
+        serializedVersion: 2
+        x: 1556
+        y: 1843
+        width: 139
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -221,26 +248,12 @@ TextureImporter:
       name: Zealot_7
       rect:
         serializedVersion: 2
-        x: 1282
-        y: 1843
-        width: 157
-        height: 126
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Zealot_8
-      rect:
-        serializedVersion: 2
-        x: 1556
-        y: 1843
-        width: 139
+        x: 1880
+        y: 1850
+        width: 92
         height: 125
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -249,12 +262,26 @@ TextureImporter:
       name: Zealot_9
       rect:
         serializedVersion: 2
-        x: 1880
-        y: 1850
-        width: 92
-        height: 125
+        x: 87
+        y: 1607
+        width: 82
+        height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zealot_10
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 1592
+        width: 84
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -263,12 +290,12 @@ TextureImporter:
       name: Zealot_11
       rect:
         serializedVersion: 2
-        x: 87
-        y: 1607
+        x: 599
+        y: 1592
         width: 82
-        height: 112
+        height: 127
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -277,12 +304,12 @@ TextureImporter:
       name: Zealot_12
       rect:
         serializedVersion: 2
-        x: 342
-        y: 1592
-        width: 84
-        height: 127
+        x: 856
+        y: 1594
+        width: 82
+        height: 125
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -291,12 +318,12 @@ TextureImporter:
       name: Zealot_13
       rect:
         serializedVersion: 2
-        x: 599
-        y: 1592
-        width: 82
-        height: 127
+        x: 1111
+        y: 1604
+        width: 83
+        height: 115
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -305,12 +332,12 @@ TextureImporter:
       name: Zealot_14
       rect:
         serializedVersion: 2
-        x: 856
-        y: 1594
+        x: 1368
+        y: 1589
         width: 82
-        height: 125
+        height: 130
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -319,12 +346,12 @@ TextureImporter:
       name: Zealot_15
       rect:
         serializedVersion: 2
-        x: 1111
-        y: 1604
-        width: 83
-        height: 115
+        x: 1623
+        y: 1590
+        width: 82
+        height: 129
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -333,12 +360,12 @@ TextureImporter:
       name: Zealot_16
       rect:
         serializedVersion: 2
-        x: 1368
-        y: 1589
-        width: 82
-        height: 130
+        x: 1887
+        y: 1600
+        width: 62
+        height: 155
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -347,12 +374,12 @@ TextureImporter:
       name: Zealot_17
       rect:
         serializedVersion: 2
-        x: 1623
-        y: 1590
-        width: 82
-        height: 129
+        x: 95
+        y: 1344
+        width: 63
+        height: 155
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -361,12 +388,12 @@ TextureImporter:
       name: Zealot_18
       rect:
         serializedVersion: 2
-        x: 1887
-        y: 1600
-        width: 62
-        height: 155
+        x: 344
+        y: 1341
+        width: 76
+        height: 167
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -375,12 +402,12 @@ TextureImporter:
       name: Zealot_19
       rect:
         serializedVersion: 2
-        x: 95
-        y: 1344
-        width: 63
-        height: 155
+        x: 595
+        y: 1340
+        width: 87
+        height: 168
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -389,12 +416,12 @@ TextureImporter:
       name: Zealot_20
       rect:
         serializedVersion: 2
-        x: 344
-        y: 1341
-        width: 76
-        height: 167
+        x: 850
+        y: 1355
+        width: 92
+        height: 153
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -403,40 +430,68 @@ TextureImporter:
       name: Zealot_21
       rect:
         serializedVersion: 2
-        x: 595
-        y: 1340
-        width: 87
-        height: 168
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Zealot_26
-      rect:
-        serializedVersion: 2
-        x: 850
-        y: 1355
-        width: 92
-        height: 157
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Zealot_27
-      rect:
-        serializedVersion: 2
         x: 1105
         y: 1357
         width: 95
-        height: 157
+        height: 151
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zealot_22
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 1361
+        width: 97
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zealot_23
+      rect:
+        serializedVersion: 2
+        x: 1614
+        y: 1360
+        width: 99
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zealot_24
+      rect:
+        serializedVersion: 2
+        x: 1868
+        y: 1360
+        width: 104
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zealot_30
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 1106
+        width: 104
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -445,12 +500,12 @@ TextureImporter:
       name: Zealot_33
       rect:
         serializedVersion: 2
-        x: 1360
-        y: 1361
-        width: 97
-        height: 155
+        x: 843
+        y: 1112
+        width: 103
+        height: 110
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -459,12 +514,12 @@ TextureImporter:
       name: Zealot_34
       rect:
         serializedVersion: 2
-        x: 1614
-        y: 1360
-        width: 99
-        height: 157
+        x: 1099
+        y: 1117
+        width: 102
+        height: 109
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -473,26 +528,68 @@ TextureImporter:
       name: Zealot_35
       rect:
         serializedVersion: 2
-        x: 1868
-        y: 1360
-        width: 104
-        height: 131
+        x: 1355
+        y: 1119
+        width: 102
+        height: 109
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Zealot_38
+      name: Zealot_36
       rect:
         serializedVersion: 2
-        x: 587
-        y: 1111
-        width: 103
-        height: 114
+        x: 1610
+        y: 1120
+        width: 104
+        height: 110
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zealot_37
+      rect:
+        serializedVersion: 2
+        x: 1865
+        y: 1123
+        width: 107
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zealot_31
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 1108
+        width: 103
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zealot_39
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 865
+        width: 108
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -501,12 +598,12 @@ TextureImporter:
       name: Zealot_40
       rect:
         serializedVersion: 2
-        x: 843
-        y: 1112
-        width: 103
+        x: 327
+        y: 868
+        width: 109
         height: 110
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -515,12 +612,12 @@ TextureImporter:
       name: Zealot_41
       rect:
         serializedVersion: 2
-        x: 1099
-        y: 1117
-        width: 102
-        height: 109
+        x: 583
+        y: 868
+        width: 110
+        height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -529,152 +626,12 @@ TextureImporter:
       name: Zealot_42
       rect:
         serializedVersion: 2
-        x: 1355
-        y: 1119
-        width: 102
-        height: 109
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Zealot_43
-      rect:
-        serializedVersion: 2
-        x: 1610
-        y: 1120
-        width: 104
-        height: 110
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Zealot_44
-      rect:
-        serializedVersion: 2
-        x: 1865
-        y: 1121
-        width: 107
-        height: 111
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Zealot_45
-      rect:
-        serializedVersion: 2
-        x: 76
-        y: 1106
-        width: 104
-        height: 121
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Zealot_46
-      rect:
-        serializedVersion: 2
-        x: 331
-        y: 1108
-        width: 103
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Zealot_47
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 867
-        width: 108
-        height: 110
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Zealot_48
-      rect:
-        serializedVersion: 2
-        x: 327
-        y: 868
-        width: 109
-        height: 110
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Zealot_49
-      rect:
-        serializedVersion: 2
-        x: 583
-        y: 868
-        width: 110
-        height: 112
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Zealot_50
-      rect:
-        serializedVersion: 2
         x: 838
         y: 868
         width: 112
         height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Zealot_51
-      rect:
-        serializedVersion: 2
-        x: 1094
-        y: 867
-        width: 117
-        height: 94
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Zealot_53
-      rect:
-        serializedVersion: 2
-        x: 1348
-        y: 872
-        width: 72
-        height: 91
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -683,12 +640,26 @@ TextureImporter:
       name: Zealot_55
       rect:
         serializedVersion: 2
-        x: 1608
-        y: 872
-        width: 113
-        height: 92
+        x: 865
+        y: 564
+        width: 84
+        height: 127
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zealot_56
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 580
+        width: 82
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -697,12 +668,26 @@ TextureImporter:
       name: Zealot_57
       rect:
         serializedVersion: 2
-        x: 1878
-        y: 870
-        width: 101
-        height: 95
+        x: 1367
+        y: 565
+        width: 77
+        height: 129
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zealot_58
+      rect:
+        serializedVersion: 2
+        x: 1615
+        y: 562
+        width: 82
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -711,12 +696,26 @@ TextureImporter:
       name: Zealot_59
       rect:
         serializedVersion: 2
-        x: 84
-        y: 616
-        width: 102
-        height: 94
+        x: 1872
+        y: 565
+        width: 91
+        height: 127
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zealot_60
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 322
+        width: 88
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -725,12 +724,26 @@ TextureImporter:
       name: Zealot_61
       rect:
         serializedVersion: 2
-        x: 340
-        y: 618
-        width: 103
-        height: 94
+        x: 335
+        y: 305
+        width: 84
+        height: 131
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zealot_62
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 304
+        width: 63
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -739,12 +752,12 @@ TextureImporter:
       name: Zealot_63
       rect:
         serializedVersion: 2
-        x: 865
-        y: 564
-        width: 84
-        height: 127
+        x: 863
+        y: 307
+        width: 65
+        height: 130
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -753,12 +766,12 @@ TextureImporter:
       name: Zealot_64
       rect:
         serializedVersion: 2
-        x: 1112
-        y: 580
-        width: 82
-        height: 114
+        x: 1118
+        y: 307
+        width: 67
+        height: 130
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -767,12 +780,12 @@ TextureImporter:
       name: Zealot_65
       rect:
         serializedVersion: 2
-        x: 1367
-        y: 565
-        width: 77
-        height: 129
+        x: 1374
+        y: 307
+        width: 67
+        height: 131
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -781,12 +794,12 @@ TextureImporter:
       name: Zealot_66
       rect:
         serializedVersion: 2
-        x: 1615
-        y: 562
-        width: 82
-        height: 129
+        x: 1629
+        y: 307
+        width: 68
+        height: 131
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -795,12 +808,12 @@ TextureImporter:
       name: Zealot_67
       rect:
         serializedVersion: 2
-        x: 1870
-        y: 565
-        width: 91
-        height: 127
+        x: 1885
+        y: 307
+        width: 68
+        height: 131
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -809,12 +822,12 @@ TextureImporter:
       name: Zealot_68
       rect:
         serializedVersion: 2
-        x: 83
-        y: 322
-        width: 88
-        height: 117
+        x: 93
+        y: 51
+        width: 68
+        height: 131
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -823,12 +836,12 @@ TextureImporter:
       name: Zealot_69
       rect:
         serializedVersion: 2
-        x: 335
-        y: 305
-        width: 84
+        x: 350
+        y: 51
+        width: 67
         height: 131
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -837,124 +850,96 @@ TextureImporter:
       name: Zealot_70
       rect:
         serializedVersion: 2
-        x: 608
-        y: 304
-        width: 63
-        height: 131
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Zealot_71
-      rect:
-        serializedVersion: 2
-        x: 863
-        y: 307
-        width: 65
-        height: 130
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Zealot_72
-      rect:
-        serializedVersion: 2
-        x: 1118
-        y: 307
-        width: 67
-        height: 130
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Zealot_73
-      rect:
-        serializedVersion: 2
-        x: 1374
-        y: 307
-        width: 67
-        height: 131
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Zealot_74
-      rect:
-        serializedVersion: 2
-        x: 1629
-        y: 307
-        width: 68
-        height: 131
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Zealot_75
-      rect:
-        serializedVersion: 2
-        x: 1885
-        y: 307
-        width: 68
-        height: 131
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Zealot_76
-      rect:
-        serializedVersion: 2
-        x: 93
-        y: 51
-        width: 68
-        height: 131
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Zealot_77
-      rect:
-        serializedVersion: 2
-        x: 350
-        y: 51
-        width: 67
-        height: 131
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Zealot_78
-      rect:
-        serializedVersion: 2
         x: 606
         y: 51
         width: 67
         height: 130
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zealot_43
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 865
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zealot_44
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 867
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zealot_45
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 868
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zealot_46
+      rect:
+        serializedVersion: 2
+        x: 1865
+        y: 869
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zealot_47
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 617
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zealot_48
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 621
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
