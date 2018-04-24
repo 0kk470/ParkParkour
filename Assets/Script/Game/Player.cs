@@ -11,7 +11,7 @@ public enum PlayerState
 }
 
 public class Player : CharacterBase {
-
+    PlayerState curState;
 	// Use this for initialization
 	void Start () {
         rb2d = GetComponent<Rigidbody2D>();
@@ -21,8 +21,16 @@ public class Player : CharacterBase {
 	void Update () {
 		if(Input.GetMouseButtonDown(0))
         {
+            if (curState == PlayerState.Jump)
+                return;
             Debug.Log("跳");
             Jump(jumpforce);
+            SetState(PlayerState.Jump);
         }
 	}
+
+    public void SetState(PlayerState _state)
+    {
+        curState = _state;
+    }
 }
