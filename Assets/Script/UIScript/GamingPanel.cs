@@ -4,21 +4,29 @@ using UnityEngine;
 
 public class GamingPanel : MonoBehaviour, UIBase
 {
-    public void LoadData()
-    {
-    }
 
-    void OnEnable()
+    void OnDestroy()
     {
-        LoadData();
+        GameManager.GetInstance().OnGameStart -= Show;
     }
     // Use this for initialization
-    void Start () {
-		
-	}
+    void Start()
+    {
+        GameManager.GetInstance().OnGameStart += Show;
+    }
 	
 	// Update is called once per frame
 	void Update () {
 		
 	}
+
+    void Show(object sender, System.EventArgs e)
+    {
+        Debug.Log("打开游戏中界面");
+        UIManager.GetInstance().OpenPanel("GamingPanel", UITweenType.Fade);
+    }
+
+    public void LoadData()
+    {
+    }
 }

@@ -12,11 +12,10 @@ public class OnGroundDetect : MonoBehaviour {
 
     protected virtual void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("layer" + LayerMask.NameToLayer("Ground"));
         if(collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
         {
+            Debug.Log("地面");
             player.SetState(PlayerState.Run);
-
         }
     }
 }

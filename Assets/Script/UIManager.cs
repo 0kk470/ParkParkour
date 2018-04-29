@@ -54,9 +54,9 @@ public class UIManager : MonoBehaviour {
             else
             {
                 panel.localScale = Vector3.zero;
+                if (panel.gameObject.activeInHierarchy)
+                    panel.gameObject.SetActive(false);
             }
-            if(!panel.gameObject.activeInHierarchy)
-                panel.gameObject.SetActive(true);
         }
     }
 
@@ -76,6 +76,7 @@ public class UIManager : MonoBehaviour {
     public void OpenPanel(string name, UITweenType type)
     {
         UIObjects[name].gameObject.SetActive(true);
+        UIObjects[name].localScale = Vector3.one;
         switch (type)
         {
             case UITweenType.Scale:

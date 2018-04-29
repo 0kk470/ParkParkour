@@ -52,9 +52,8 @@ public class StartPanel : MonoBehaviour,IPointerClickHandler, UIBase
     {
         if(eventData.pointerPress.name == gameObject.name && GameManager.curState == GameState.GameStart)
         {
-            Debug.Log("游戏开始");
             UIManager.GetInstance().ClosePanel("StartPanel", UITweenType.Fade);
-            GameManager.GetInstance().StartGame();
+            GameManager.GetInstance().StartGame(this,EventArgs.Empty);
         }
     }
 

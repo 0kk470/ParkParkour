@@ -11,7 +11,6 @@ public class Initializer : MonoBehaviour {
     private void Awake()
     {
         AVObject.RegisterSubclass<PlayerData>();
-        GameManager.Init();
     }
     // Use this for initialization
     void Start ()
