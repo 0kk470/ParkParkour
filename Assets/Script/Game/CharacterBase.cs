@@ -6,6 +6,7 @@ public class CharacterBase : MonoBehaviour {
     public float speed;
     public float jumpforce;
     protected Rigidbody2D rb2d;
+    protected Animator animator;
 	// Use this for initialization
     public virtual void Move(float _speed)
     {

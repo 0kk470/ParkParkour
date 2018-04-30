@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public enum PlayerState
 {
@@ -13,27 +14,32 @@ public enum PlayerState
 
 public class Player : CharacterBase
 {
-    PlayerState curState;
+    private PlayerState curState;
     // Use this for initialization
     void Start()
     {
+        Init();
         rb2d = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     void OnEnable()
     {
         GameManager.GetInstance().OnGameOver += OnPlayerDeath;
+        GameManager.GetInstance().OnGameStart += OnPlayerStart;
     }
 
-     void OnDisable() //Also called when destroyed
+    void OnDisable() //Also called when destroyed
     {
         GameManager.GetInstance().OnGameOver -= OnPlayerDeath;
+        GameManager.GetInstance().OnGameStart -= OnPlayerStart;
     }
 
     // Update is called once per frame
     void Update()
     {
         HandleInput();
+        HandleAnimation();
     }
 
     void HandleInput()
@@ -49,8 +55,11 @@ public class Player : CharacterBase
         }
 #endif
 #if UNITY_ANDROID || UNITY_IPHONE
-        if (Input.touchCount > 0)
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
         {
+            //Debug.Log(EventSystem.current.gameObject.name);
+            if (EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
+                return;
             if (curState == PlayerState.Jump)
                 return;
             Jump(jumpforce);
@@ -58,9 +67,30 @@ public class Player : CharacterBase
 #endif
     }
 
+    void HandleAnimation()
+    {
+        var cur_state = animator.GetInteger("State");
+        var tar_state = (int)curState;
+        if (cur_state != tar_state)
+            animator.SetInteger("State", tar_state);
+    }
+
+    void OnPlayerStart(object sender, EventArgs e)
+    {
+
+    }
+
     void OnPlayerDeath(object sender, EventArgs e)
     {
+        SetState(PlayerState.Death);
+        animator.SetTrigger("Death");
         Debug.Log("玩家死亡");
+    }
+
+
+    public void Init()
+    {
+        curState = PlayerState.Idle;
     }
 
     public override void Jump(float _jumpforce)
@@ -72,5 +102,10 @@ public class Player : CharacterBase
     public void SetState(PlayerState _state)
     {
         curState = _state;
+    }
+
+    public PlayerState GetPlayerState()
+    {
+        return curState;
     }
 }

@@ -1,32 +1,60 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
+public class UIEventArgs : EventArgs
+{
+
+}
 
 public class GamingPanel : MonoBehaviour, UIBase
 {
-
-    void OnDestroy()
-    {
-        GameManager.GetInstance().OnGameStart -= Show;
-    }
+    private Text score;
+    private float scorevalue;
     // Use this for initialization
-    void Start()
+    void Awake()
     {
-        GameManager.GetInstance().OnGameStart += Show;
+        score = transform.Find("Score").GetComponent<Text>();
+        transform.Find("pause_btn").GetComponent<Button>().onClick.AddListener(OnPauseBtnClick);
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
-    void Show(object sender, System.EventArgs e)
+    void OnEnable()
     {
-        Debug.Log("打开游戏中界面");
-        UIManager.GetInstance().OpenPanel("GamingPanel", UITweenType.Fade);
+        LoadData();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        UpdateScore();
+    }
+
+    void UpdateScore()
+    {
+        scorevalue = Time.time * 10;
+        score.text = "Score : " + Mathf.Ceil(scorevalue);
+    }
+
+    private void OnPauseBtnClick()
+    {
+        UIManager.GetInstance().OpenPanel("PausePanel", UITweenType.Scale, PauseGame);
+    }
+
+    private void PauseGame()
+    {
+        Time.timeScale = 0;
     }
 
     public void LoadData()
     {
+        scorevalue = 0;
+        score.text = "Score : 0";
+    }
+
+    public int GetScoreValue()
+    {
+        return Mathf.RoundToInt(scorevalue);
     }
 }

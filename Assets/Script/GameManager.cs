@@ -11,10 +11,12 @@ public enum GameState
 }
 
 public class GameManager:MonoBehaviour{
+    public Transform startPosition;
     public event EventHandler OnGameStart;
     public event EventHandler OnGameOver;
     public static GameState curState;
     private static GameManager instance;
+    private Player player;
     public static GameManager GetInstance()
     {
         return instance;
@@ -23,6 +25,11 @@ public class GameManager:MonoBehaviour{
     private void Awake()
     {
         Init();
+    }
+
+    private void Start()
+    {
+        player = FindObjectOfType<Player>();
     }
 
     public void Init ()
@@ -41,6 +48,14 @@ public class GameManager:MonoBehaviour{
         StartCoroutine(GameOverProcess(sender, e));
     }
 
+    public void ResetPlayer()
+    {
+        if (player == null)
+            Debug.LogError("获取玩家索引失败");
+        player.transform.position = startPosition.position;
+        player.Init();
+    }
+
     private IEnumerator GameStartProcess(object sender, EventArgs e)
     {
         yield return new WaitForSeconds(2f);
@@ -52,8 +67,9 @@ public class GameManager:MonoBehaviour{
 
     private IEnumerator GameOverProcess(object sender, EventArgs e)
     {
-        yield return new WaitForSeconds(2f);
         if (OnGameOver != null)
             OnGameOver(sender, e);
+        yield return new WaitForSeconds(2f);
+        ResetPlayer();
     }
 }

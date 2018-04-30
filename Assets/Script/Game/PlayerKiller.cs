@@ -10,7 +10,7 @@ public class PlayerKiller : MonoBehaviour {
     {
         if(collision.CompareTag("Player"))
         {
-            GameManager.GetInstance().EndGame(this, EventArgs.Empty);
+            GameManager.GetInstance().EndGame(collision.transform, EventArgs.Empty);
         }
     }
 }

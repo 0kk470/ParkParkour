@@ -10,10 +10,6 @@ public class GameOverPanel : MonoBehaviour,UIBase {
         LoadData();
     }
     // Use this for initialization
-    void Start () {
-        GameManager.GetInstance().OnGameOver += GameOver;
-	}
-	
 	// Update is called once per frame
 	void Update () {
 		
@@ -22,17 +18,5 @@ public class GameOverPanel : MonoBehaviour,UIBase {
     public void LoadData()
     {
 
-    }
-
-    void GameOver(object sender,EventArgs e)
-    {
-        LoadData();
-        ShowPanel();
-    }
-
-    private  IEnumerator ShowPanel()
-    {
-        yield return new WaitForSeconds(2f);
-        UIManager.GetInstance().OpenPanel("GameOverPanel", UITweenType.Scale);
     }
 }

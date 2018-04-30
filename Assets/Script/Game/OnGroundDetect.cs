@@ -15,7 +15,8 @@ public class OnGroundDetect : MonoBehaviour {
         if(collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
         {
             Debug.Log("地面");
-            player.SetState(PlayerState.Run);
+            if(player.GetPlayerState() != PlayerState.Idle)
+              player.SetState(PlayerState.Run);
         }
     }
 }
