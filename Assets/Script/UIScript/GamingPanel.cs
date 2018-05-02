@@ -12,19 +12,28 @@ public class UIEventArgs : EventArgs
 public class GamingPanel : MonoBehaviour, UIBase
 {
     private Text score;
-    private float scorevalue;
+    private Text candyNum;
+    private float scorevalue; //分数
+    private int candyvalue; //拥有的糖果数量
     // Use this for initialization
     void Awake()
     {
         score = transform.Find("Score").GetComponent<Text>();
+        candyNum = transform.Find("candy/Text").GetComponent<Text>();
         transform.Find("pause_btn").GetComponent<Button>().onClick.AddListener(OnPauseBtnClick);
     }
 
     void OnEnable()
     {
         LoadData();
+        GameManager.GetInstance().OnPickItem += OnPick;
+        candyvalue = DataManager.LoadData<int>("candy");
     }
 
+    void OnDisable()
+    {
+        GameManager.GetInstance().OnPickItem -= OnPick;
+    }
     // Update is called once per frame
     void Update()
     {
@@ -33,13 +42,42 @@ public class GamingPanel : MonoBehaviour, UIBase
 
     void UpdateScore()
     {
-        scorevalue = Time.time * 10;
+        scorevalue += Time.deltaTime * 10;
         score.text = "Score : " + Mathf.Ceil(scorevalue);
+        candyNum.text = candyvalue.ToString();
     }
 
     private void OnPauseBtnClick()
     {
         UIManager.GetInstance().OpenPanel("PausePanel", UITweenType.Scale, PauseGame);
+    }
+
+    private void OnPick(object sender,EventArgs e)
+    {
+        var pue = e as PickUpEventArgs;
+        if(pue == null)
+        {
+            Debug.LogError("获取拾取信息失败");
+            return;
+        }
+        scorevalue += pue.pickScore;
+        switch (pue.pickType)
+        {
+            case pickUpType.candy:
+                {
+                    PickCandy();
+                    break;
+                }
+            default:
+                break;
+        }
+    }
+
+
+    private void PickCandy()
+    {
+        candyvalue += 1;
+        DataManager.SaveData("candy", candyvalue);
     }
 
     private void PauseGame()
