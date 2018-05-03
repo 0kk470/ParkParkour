@@ -5,8 +5,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class GameOverPanel : MonoBehaviour,UIBase {
-    void Start()
+    private Text Score;
+    void Awake()
     {
+        Score = transform.Find("score").GetComponent<Text>();
         transform.Find("restart_btn").GetComponent<Button>().onClick.AddListener(OnRestartBtnClick);
         transform.Find("back_btn").GetComponent<Button>().onClick.AddListener(OnBackBtnClick);
         transform.Find("upload_btn").GetComponent<Button>().onClick.AddListener(OnUploadBtnClick);
@@ -40,6 +42,6 @@ public class GameOverPanel : MonoBehaviour,UIBase {
 
     public void LoadData()
     {
-
+        Score.text = DataManager.LoadData<int>("Score").ToString();
     }
 }

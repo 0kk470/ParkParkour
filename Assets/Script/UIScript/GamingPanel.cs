@@ -37,6 +37,8 @@ public class GamingPanel : MonoBehaviour, UIBase
     // Update is called once per frame
     void Update()
     {
+        if (GameManager.curState != GameState.Gaming)
+            return;
         UpdateScore();
     }
 

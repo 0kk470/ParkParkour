@@ -21,17 +21,21 @@ public class GameManager : MonoBehaviour
     private Player player;
     public static GameManager GetInstance()
     {
+        if (instance == null)
+            Debug.LogError("GameManager未初始化");
         return instance;
     }
 
     private void Awake()
     {
+        DontDestroyOnLoad(this);
         Init();
     }
 
     private void Start()
     {
         player = FindObjectOfType<Player>();
+        Debug.Log("搜索玩家对象");
     }
 
     public void Init()
