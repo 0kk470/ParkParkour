@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using JsonFx.Json;
 public class DataManager {
-
     /// <summary>
     /// 保存一个对象
     /// </summary>

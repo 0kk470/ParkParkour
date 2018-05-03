@@ -102,7 +102,8 @@ public class UIManager : MonoBehaviour {
     private IEnumerator UIGameOverProcess()
     {
         ClosePanel("GamingPanel", UITweenType.Fade);
-        yield return new WaitForSeconds(2f);
+        SaveScore();
+        yield return new WaitForSeconds(1f);
         OpenPanel("GameOverPanel", UITweenType.Scale);
         yield return new WaitForSeconds(1f);
     }
@@ -117,5 +118,11 @@ public class UIManager : MonoBehaviour {
         ClosePanel("StartPanel", UITweenType.Fade);
         yield return new WaitForSeconds(0.1f);
         OpenPanel("GamingPanel", UITweenType.Fade);
+    }
+
+    private void SaveScore()
+    {
+        var myScore = UIObjects["GamingPanel"].GetComponent<GamingPanel>().GetScoreValue();
+        DataManager.SaveData("Score", myScore);
     }
 }

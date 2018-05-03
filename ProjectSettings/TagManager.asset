@@ -15,8 +15,8 @@ TagManager:
   - 
   - Ground
   - Character
-  - 
-  - 
+  - Item
+  - Obstacles
   - 
   - 
   - 
@@ -41,12 +41,21 @@ TagManager:
   - name: BackGround
     uniqueID: 3359886069
     locked: 0
-  - name: Game
+  - name: Environment
     uniqueID: 1525698891
     locked: 0
-  - name: UI
-    uniqueID: 4291575877
+  - name: Item
+    uniqueID: 1512833407
+    locked: 0
+  - name: Character
+    uniqueID: 949558523
+    locked: 0
+  - name: Obstacles
+    uniqueID: 3217993461
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: UI
+    uniqueID: 4291575877
     locked: 0

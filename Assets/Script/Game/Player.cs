@@ -16,20 +16,20 @@ public class Player : CharacterBase
 {
     private PlayerState curState;
     // Use this for initialization
-    void Start()
+    void Awake()
     {
         Init();
         rb2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }
 
-    void OnEnable()
+    void Start()
     {
         GameManager.GetInstance().OnGameOver += OnPlayerDeath;
         GameManager.GetInstance().OnGameStart += OnPlayerStart;
     }
 
-    void OnDisable() //Also called when destroyed
+    void OnDestroy() //Also called when destroyed
     {
         GameManager.GetInstance().OnGameOver -= OnPlayerDeath;
         GameManager.GetInstance().OnGameStart -= OnPlayerStart;
@@ -67,7 +67,7 @@ public class Player : CharacterBase
 #endif
     }
 
-    void HandleAnimation()
+    private void HandleAnimation()
     {
         var cur_state = animator.GetInteger("State");
         var tar_state = (int)curState;
@@ -75,12 +75,12 @@ public class Player : CharacterBase
             animator.SetInteger("State", tar_state);
     }
 
-    void OnPlayerStart(object sender, EventArgs e)
+    private void OnPlayerStart(object sender, EventArgs e)
     {
-
+        Debug.Log("玩家开始行动");
     }
 
-    void OnPlayerDeath(object sender, EventArgs e)
+    private void OnPlayerDeath(object sender, EventArgs e)
     {
         SetState(PlayerState.Death);
         animator.SetTrigger("Death");

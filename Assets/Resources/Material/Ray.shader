@@ -1,6 +1,6 @@
 ﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
 
-Shader "My/Water" {
+Shader "My/Ray" {
 	Properties{
 		_MainTex("Main Tex", 2D) = "white" {}
 	_Color("Color Tint", Color) = (1, 1, 1, 1)
@@ -48,8 +48,8 @@ Shader "My/Water" {
 		v2f o;
 
 		float4 offset;
-		offset.xzw = float3(0.0, 0.0, 0.0);
-		offset.y = sin(_Frequency * _Time.y + v.vertex.x * _InvWaveLength + v.vertex.y * _InvWaveLength + v.vertex.z * _InvWaveLength) * _Magnitude;
+		offset.yzw = float3(0.0, 0.0, 0.0);
+		offset.x = sin(_Frequency * _Time.y + v.vertex.x * _InvWaveLength + v.vertex.y * _InvWaveLength + v.vertex.z * _InvWaveLength) * _Magnitude;
 		o.pos = UnityObjectToClipPos(v.vertex + offset);
 
 		o.uv = TRANSFORM_TEX(v.texcoord, _MainTex);
