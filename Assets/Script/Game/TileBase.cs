@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TileBase : MonoBehaviour {
-    public float Setting_Speed;
+    [SerializeField]
+    protected TileType tileType;
+    [SerializeField]
     protected float m_Speed;
 	// Use this for initialization
 	protected virtual void  Start ()
     {
-        SetSpeed(Setting_Speed);
 
     }
 	
@@ -18,9 +19,28 @@ public class TileBase : MonoBehaviour {
         transform.position += Vector3.left * m_Speed * Time.deltaTime; 
 	}
 
+    void OnDisable()
+    {
+        DestroyChildren();
+    }
+
+    public virtual void DestroyChildren()
+    {
+        for(int i = 0;i < transform.childCount;i++)
+        {
+            Destroy(transform.GetChild(i).gameObject);
+        }
+    }
+
     public virtual void SetSpeed(float _Speed)
     {
         m_Speed = _Speed;
+    }
+
+    public virtual void Init(TileType _type,float _Speed)
+    {
+        SetTileType(_type);
+        SetSpeed(_Speed);
     }
 
     public float GetSpeed()
@@ -28,12 +48,14 @@ public class TileBase : MonoBehaviour {
         return m_Speed;
     }
 
-    void OnBecameInvisible()
+    public void SetTileType(TileType _type)
     {
-        Debug.Log("不可见了");
-        Destroy(gameObject);
+        tileType = _type;
     }
 
-
+    public TileType GetTileType()
+    {
+        return tileType;
+    }
 
 }

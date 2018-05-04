@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 using UnityEngine.EventSystems;
 
 public enum PlayerState
@@ -49,9 +50,10 @@ public class Player : CharacterBase
         {
             if (curState == PlayerState.Jump)
                 return;
+            if (EventSystem.current.IsPointerOverGameObject())
+                return;
             Debug.Log("跳");
             Jump(jumpforce);
-            SetState(PlayerState.Jump);
         }
 #endif
 #if UNITY_ANDROID || UNITY_IPHONE
@@ -75,9 +77,17 @@ public class Player : CharacterBase
             animator.SetInteger("State", tar_state);
     }
 
+    private void BeginMovement()
+    {
+        SetState(PlayerState.Run);
+        rb2d.DOMoveX(-6.5f, 2f).SetEase(Ease.Linear).SetUpdate(false).onComplete = TerranManager.GetInstance().StartRollingTerran;
+    }
+
     private void OnPlayerStart(object sender, EventArgs e)
     {
         Debug.Log("玩家开始行动");
+        Init();
+        BeginMovement();
     }
 
     private void OnPlayerDeath(object sender, EventArgs e)
@@ -90,7 +100,9 @@ public class Player : CharacterBase
 
     public void Init()
     {
-        curState = PlayerState.Idle;
+        rb2d.bodyType = RigidbodyType2D.Dynamic;
+        rb2d.velocity = Vector2.zero;
+        SetState(PlayerState.Idle);
     }
 
     public override void Jump(float _jumpforce)

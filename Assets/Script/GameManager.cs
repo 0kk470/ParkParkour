@@ -65,7 +65,7 @@ public class GameManager : MonoBehaviour
         if (player == null)
             Debug.LogError("获取玩家索引失败");
         player.transform.position = startPosition.position;
-        player.Init();
+        player.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
     }
 
     private IEnumerator GameStartProcess(object sender, EventArgs e)
