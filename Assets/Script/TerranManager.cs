@@ -10,20 +10,26 @@ public enum TileType
 
 public class TerranManager : MonoBehaviour {
     public Transform TerranStartPosition;
+    public List<PickUp> ItemList;
+    public List<PlayerKiller> ObstacleList;
     private static TerranManager instance;
     [SerializeField]
+    private List<TileBase> ActivatedTiles;
+    [SerializeField]
     private Dictionary<TileType, Queue<TileBase>> TilePool;
+    //以下皆为随着游戏时间长短而变化的值，需要特殊的函数处理
     [SerializeField]
     private float TileSpeed = 5f;
-    [SerializeField]
-    private List<TileBase> ActivatedTiles;
-    private GamingPanel gamingPanel;
     [SerializeField]
     private float simpleValue;
     [SerializeField]
     private float normalValue;
     [SerializeField]
     private float hardValue;
+    [SerializeField]
+    private int ItemNum = 10;
+    [SerializeField]
+    private int ObstacleNum = 2;
 	// Use this for initialization
 	void Awake ()
     {
@@ -36,13 +42,11 @@ public class TerranManager : MonoBehaviour {
 
     private void Start()
     {
-        gamingPanel = FindObjectOfType<GamingPanel>();
         GameManager.GetInstance().OnGameOver += GameOver;
     }
 
     private void Update()
     {
-        int score = gamingPanel.GetScoreValue();
     }
 
     private GameObject CreateNewTerran(TileType _type)
@@ -112,6 +116,22 @@ public class TerranManager : MonoBehaviour {
 
     }
 
+    private void SpawnChilds(TileBase tile)
+    {
+        for(int i = 0;i < ItemNum;i++)
+        {
+            int index = Random.Range(0, ItemList.Count);
+            var item = ItemList[index];
+            tile.SpawnItem(item.gameObject, Random.Range(item.GetSpawnRange().x, item.GetSpawnRange().y));
+        }
+        for(int i = 0;i < ObstacleNum;i++)
+        {
+            int index = Random.Range(0, ObstacleList.Count);
+            var obstacle = ObstacleList[index];
+            tile.SpawnItem(obstacle.gameObject,10f);
+        }
+    }
+
     public void SpawnTerranFromPool(TileType _type)
     {
         GameObject tile = null;
@@ -122,6 +142,7 @@ public class TerranManager : MonoBehaviour {
         tile.transform.SetParent(transform);
         tile.transform.localPosition = TerranStartPosition.localPosition;
         var tilebase = tile.GetComponent<TileBase>();
+        SpawnChilds(tilebase);
         tilebase.Init(_type, TileSpeed);
         ActivatedTiles.Add(tilebase);
         tile.SetActive(true);

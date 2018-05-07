@@ -69,6 +69,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ItemScore: 20
+  SpawnRangeY: {x: 0.5, y: 3}
 --- !u!212 &212418848260032144
 SpriteRenderer:
   m_ObjectHideFlags: 1

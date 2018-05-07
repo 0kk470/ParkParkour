@@ -861,6 +861,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileType: 2
   m_Speed: 0
+  SpawnChildRange: {x: 50, y: 0}
 --- !u!212 &212018741005914164
 SpriteRenderer:
   m_ObjectHideFlags: 1

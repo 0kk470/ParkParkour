@@ -24,12 +24,19 @@ public class PickUpEventArgs : EventArgs
 public class PickUp : MonoBehaviour {
     [SerializeField]
     protected float ItemScore;
+    [SerializeField]
+    protected Vector2 SpawnRangeY;
     protected Transform startPosition;
 	// Use this for initialization
 	void Start () 
     {
         startPosition = transform;
         Animate();
+    }
+
+    public Vector2 GetSpawnRange()
+    {
+        return SpawnRangeY;
     }
     // Update is called once per frame
     protected void OnTriggerEnter2D(Collider2D collision)

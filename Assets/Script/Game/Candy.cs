@@ -12,6 +12,7 @@ public class Candy : PickUp {
         if(collision.CompareTag("Player"))
         {
             GameManager.GetInstance().PickItem(this,new PickUpEventArgs(pickUpType.candy,ItemScore));
+            Destroy(gameObject);
         }
     }
     // Use this for initialization
