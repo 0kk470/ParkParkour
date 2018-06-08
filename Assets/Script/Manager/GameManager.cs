@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum GameState
 {
@@ -62,11 +63,28 @@ public class GameManager : MonoBehaviour
     public void ResetPlayer()
     {
         if (player == null)
-            Debug.LogError("获取玩家索引失败");
+        {
+            player = FindObjectOfType<Player>();
+        }
         player.transform.position = startPosition.position;
         var rb2d = player.GetComponent<Rigidbody2D>();
         rb2d.bodyType = RigidbodyType2D.Kinematic;
         rb2d.velocity = Vector3.zero;
+    }
+
+    public void RestartGame()
+    {
+        UIManager.GetInstance().InvokeLoadingPanel(() =>
+        {
+            UIManager.GetInstance().ClosePanel("GameOverPanel", UITweenType.Scale);
+            UIManager.GetInstance().ClosePanel("PausePanel", UITweenType.Scale);
+            UIManager.GetInstance().ClosePanel("GamingPanel", UITweenType.Fade);
+            curState = GameState.GameStart;
+            TerranManager.GetInstance().Init();
+            ResetPlayer();
+            Time.timeScale = 1;
+            StartCoroutine(GameRestartProcess());
+        });
     }
 
     private IEnumerator GameStartProcess(object sender, EventArgs e)
@@ -86,4 +104,11 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(2f);
         ResetPlayer();
     }
+
+    private IEnumerator GameRestartProcess()
+    {
+        yield return new WaitForSeconds(0.5f);
+        StartGame(null, EventArgs.Empty);
+    }
+
 }

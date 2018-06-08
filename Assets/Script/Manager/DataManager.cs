@@ -32,7 +32,9 @@ public class DataManager {
     {
         SaveData("Music", 1);
         SaveData("Audio", 1);
-        SaveData("candy", 0);
+        SaveData("candy", 200);
         SaveData("Score", 0);
+        SaveData(KeyConfig.shield, 0);
+        SaveData(KeyConfig.ray, 0);
     }
 }

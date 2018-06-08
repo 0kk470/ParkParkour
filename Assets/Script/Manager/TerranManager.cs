@@ -10,6 +10,7 @@ public enum TileType
 
 public class TerranManager : MonoBehaviour {
     public Transform TerranStartPosition;
+    public GameObject RestartTile;
     public List<PickUp> ItemList;
     public List<PlayerKiller> ObstacleList;
     private static TerranManager instance;
@@ -78,6 +79,25 @@ public class TerranManager : MonoBehaviour {
         StopRollingTerrain();
     }
 
+    public void Init()
+    {
+        TileSpeed = 5f;
+        ItemNum = 10;
+        ObstacleNum = 2;
+        simpleValue = 50;
+        normalValue = 80;
+        hardValue = 100;
+        while(ActivatedTiles.Count > 0)
+        {
+            CollectTerranToPool(ActivatedTiles[0]);
+        }
+        var simp = Instantiate(RestartTile);
+        ActivatedTiles.Add(simp.GetComponent<TileBase>());
+        simp.transform.SetParent(transform);
+        simp.transform.localPosition = RestartTile.transform.localPosition;
+        simp.SetActive(true);
+    }
+
     public static TerranManager GetInstance()
     {
         if (instance == null)
@@ -132,7 +152,7 @@ public class TerranManager : MonoBehaviour {
         }
     }
 
-    public void SpawnTerranFromPool(TileType _type)
+    public TileBase SpawnTerranFromPool(TileType _type)
     {
         GameObject tile = null;
         if (TilePool[_type].Count > 0)
@@ -146,6 +166,7 @@ public class TerranManager : MonoBehaviour {
         tilebase.Init(_type, TileSpeed);
         ActivatedTiles.Add(tilebase);
         tile.SetActive(true);
+        return tilebase;
     }
 
     public void CollectTerranToPool(TileBase collect)

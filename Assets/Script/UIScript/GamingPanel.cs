@@ -38,7 +38,11 @@ public class GamingPanel : MonoBehaviour, UIBase
     void Update()
     {
         if (GameManager.curState != GameState.Gaming)
+        {
+            if (scorevalue != 0 && GameManager.curState == GameState.GameStart)
+                scorevalue = 0;
             return;
+        }
         UpdateScore();
     }
 

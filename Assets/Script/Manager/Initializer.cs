@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
+using LeanCloud.Utilities;
+using LeanCloud.Realtime;
 /// <summary>
 /// 游戏初始化类
 /// </summary>
@@ -10,13 +12,13 @@ public class Initializer : MonoBehaviour {
 
     private void Awake()
     {
+        Application.targetFrameRate = 90;
         AVObject.RegisterSubclass<PlayerData>();
         int firstLaunch = PlayerPrefs.GetInt("launch");
-        if(firstLaunch == 0)
+        if (firstLaunch == 0)
         {
             Debug.Log("第一次启动游戏");
             PlayerPrefs.SetInt("launch", 1);
-            PlayerPrefs.Save();
             DataManager.InitData();
         }
     }

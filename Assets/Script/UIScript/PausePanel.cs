@@ -25,7 +25,7 @@ public class PausePanel : MonoBehaviour, UIBase
 
     void OnRestartBtnClick()
     {
-
+        GameManager.GetInstance().RestartGame();
     }
 
     void OnBackBtnClick()
@@ -33,6 +33,7 @@ public class PausePanel : MonoBehaviour, UIBase
         Debug.Log("重新加载");
         ResumeGame();
         SceneManager.LoadScene(0);
+        GameManager.curState = GameState.GameStart;
     }
 
     void OnResumeBtnClick()

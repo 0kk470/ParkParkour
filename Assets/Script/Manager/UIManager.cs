@@ -20,6 +20,7 @@ public interface UIBase
 
 public class UIManager : MonoBehaviour {
     private static UIManager instance;
+    public MessageBox mb;
     private Dictionary<string, Transform> UIObjects;
     // Use this for initialization
 
@@ -38,6 +39,9 @@ public class UIManager : MonoBehaviour {
         UIObjects["RankPanel"] = transform.Find("RankPanel");
         UIObjects["SettingPanel"] = transform.Find("SettingPanel");
         UIObjects["PausePanel"] = transform.Find("PausePanel");
+        UIObjects["LoadingPanel"] = transform.Find("LoadingPanel");
+        UIObjects["MessageBox"] = transform.Find("MessageBox");
+        mb = UIObjects["MessageBox"].GetComponent<MessageBox>();
         InitPanel();
     }
 	
@@ -67,6 +71,23 @@ public class UIManager : MonoBehaviour {
         }
     }
 
+    public void RefreshUI(string UIName)
+    {
+        if(UIObjects.ContainsKey(UIName))
+        {
+            UIObjects[UIName].GetComponent<UIBase>().LoadData();
+        }
+        else
+        {
+            Debug.LogError(UIName + "不存在");
+        }
+    }
+
+    public void ShowMessageBox(MessageBoxData data)
+    {
+        mb.Show(data);
+    }
+
     public void ClosePanel(string name, UITweenType type,TweenCallback callback = null)
     {
         switch (type)
@@ -94,6 +115,12 @@ public class UIManager : MonoBehaviour {
         }
     }
 
+    public void InvokeLoadingPanel(TweenCallback callback = null)
+    {
+        UIObjects["LoadingPanel"].gameObject.SetActive(true);
+        UIObjects["LoadingPanel"].DOScale(Vector3.one, 1f).SetLoops(2, LoopType.Yoyo).SetEase(Ease.Linear).onStepComplete = callback;
+    }
+
     void GameOver(object sender, EventArgs e)
     {
         StartCoroutine(UIGameOverProcess());
@@ -116,7 +143,7 @@ public class UIManager : MonoBehaviour {
     private IEnumerator UIGameStartProcess()
     {
         ClosePanel("StartPanel", UITweenType.Fade);
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(2f);
         OpenPanel("GamingPanel", UITweenType.Fade);
     }
 
@@ -125,4 +152,5 @@ public class UIManager : MonoBehaviour {
         var myScore = UIObjects["GamingPanel"].GetComponent<GamingPanel>().GetScoreValue();
         DataManager.SaveData("Score", myScore);
     }
+
 }

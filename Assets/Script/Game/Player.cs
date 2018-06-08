@@ -16,6 +16,7 @@ public enum PlayerState
 public class Player : CharacterBase
 {
     private PlayerState curState;
+    public float startX = 0;
     // Use this for initialization
     void Awake()
     {
@@ -26,6 +27,7 @@ public class Player : CharacterBase
 
     void Start()
     {
+        startX = transform.localPosition.x;
         GameManager.GetInstance().OnGameOver += OnPlayerDeath;
         GameManager.GetInstance().OnGameStart += OnPlayerStart;
     }
@@ -80,7 +82,8 @@ public class Player : CharacterBase
     private void BeginMovement()
     {
         SetState(PlayerState.Run);
-        rb2d.DOMoveX(-6.5f, 2f).SetEase(Ease.Linear).SetUpdate(false).onComplete = TerranManager.GetInstance().StartRollingTerran;
+        rb2d.DOMoveX(startX + 5f, 2f).SetEase(Ease.Linear).SetUpdate(false).onComplete = TerranManager.GetInstance().StartRollingTerran;
+        Debug.Log("DoTween");
     }
 
     private void OnPlayerStart(object sender, EventArgs e)
