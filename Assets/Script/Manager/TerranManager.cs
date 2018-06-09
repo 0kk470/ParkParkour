@@ -12,8 +12,9 @@ public class TerranManager : MonoBehaviour {
     public Transform TerranStartPosition;
     public GameObject RestartTile;
     public List<PickUp> ItemList;
-    public List<PlayerKiller> ObstacleList;
+    public List<GameObject> ObstacleList;
     private static TerranManager instance;
+    private GamingPanel gp;
     [SerializeField]
     private List<TileBase> ActivatedTiles;
     [SerializeField]
@@ -30,7 +31,7 @@ public class TerranManager : MonoBehaviour {
     [SerializeField]
     private int ItemNum = 10;
     [SerializeField]
-    private int ObstacleNum = 2;
+    private int ObstacleNum = 3;
 	// Use this for initialization
 	void Awake ()
     {
@@ -44,10 +45,25 @@ public class TerranManager : MonoBehaviour {
     private void Start()
     {
         GameManager.GetInstance().OnGameOver += GameOver;
+        gp = FindObjectOfType<GamingPanel>();
     }
 
     private void Update()
     {
+        if (GameManager.curState != GameState.Gaming)
+            return;
+        CaculateValue();
+    }
+
+    private void CaculateValue()
+    {
+        simpleValue = 60 -  Mathf.Log10(gp.GetScoreValue() * 10 + 1);
+        if (simpleValue < 20)
+            simpleValue = 20;
+
+        normalValue = 90 - Mathf.Log10(gp.GetScoreValue() * 5 + 1);
+        if (normalValue < 40)
+            normalValue = 40;
     }
 
     private GameObject CreateNewTerran(TileType _type)
@@ -84,8 +100,8 @@ public class TerranManager : MonoBehaviour {
         TileSpeed = 5f;
         ItemNum = 10;
         ObstacleNum = 2;
-        simpleValue = 50;
-        normalValue = 80;
+        simpleValue = 60;
+        normalValue = 90;
         hardValue = 100;
         while(ActivatedTiles.Count > 0)
         {
@@ -148,7 +164,7 @@ public class TerranManager : MonoBehaviour {
         {
             int index = Random.Range(0, ObstacleList.Count);
             var obstacle = ObstacleList[index];
-            tile.SpawnItem(obstacle.gameObject,10f);
+            tile.SpawnItem(obstacle,10f);
         }
     }
 

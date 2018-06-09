@@ -13,6 +13,7 @@ public enum GameState
 
 public class GameManager : MonoBehaviour
 {
+    public AudioSource coinaudio;
     public Transform startPosition;
     public event EventHandler OnGameStart;
     public event EventHandler OnGameOver;
@@ -20,6 +21,10 @@ public class GameManager : MonoBehaviour
     public static GameState curState;
     private static GameManager instance;
     private Player player;
+    [SerializeField]
+    private GameObject VRay;
+    [SerializeField]
+    private GameObject m_Shield;
     public static GameManager GetInstance()
     {
         if (instance == null)
@@ -74,12 +79,16 @@ public class GameManager : MonoBehaviour
 
     public void RestartGame()
     {
+        StopAllCoroutines();
         UIManager.GetInstance().InvokeLoadingPanel(() =>
         {
             UIManager.GetInstance().ClosePanel("GameOverPanel", UITweenType.Scale);
             UIManager.GetInstance().ClosePanel("PausePanel", UITweenType.Scale);
             UIManager.GetInstance().ClosePanel("GamingPanel", UITweenType.Fade);
             curState = GameState.GameStart;
+            SetRay(false);
+            SetShield(false);
+            UIManager.GetInstance().RefreshUI("GamingPanel");
             TerranManager.GetInstance().Init();
             ResetPlayer();
             Time.timeScale = 1;
@@ -109,6 +118,16 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         StartGame(null, EventArgs.Empty);
+    }
+
+    public void SetRay(bool isOn)
+    {
+        VRay.SetActive(isOn);
+    }
+
+    public void SetShield(bool isOn)
+    {
+        m_Shield.SetActive(isOn);
     }
 
 }

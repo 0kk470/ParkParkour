@@ -11,6 +11,7 @@ public class Candy : PickUp {
         base.OnEnter(collision);
         if(collision.CompareTag("Player"))
         {
+            AudioManager.PlayAudio(GameManager.GetInstance().coinaudio);
             GameManager.GetInstance().PickItem(this,new PickUpEventArgs(pickUpType.candy,ItemScore));
             Destroy(gameObject);
         }

@@ -34,7 +34,7 @@ public class DataManager {
         SaveData("Audio", 1);
         SaveData("candy", 200);
         SaveData("Score", 0);
-        SaveData(KeyConfig.shield, 0);
-        SaveData(KeyConfig.ray, 0);
+        SaveData(KeyConfig.shield, 1);
+        SaveData(KeyConfig.ray, 1);
     }
 }

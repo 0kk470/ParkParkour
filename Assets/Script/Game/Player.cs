@@ -17,6 +17,9 @@ public class Player : CharacterBase
 {
     private PlayerState curState;
     public float startX = 0;
+    public AudioSource DeathAudio;
+    public AudioSource jumpAudio;
+    public AudioSource collideAudio;
     // Use this for initialization
     void Awake()
     {
@@ -96,6 +99,8 @@ public class Player : CharacterBase
     private void OnPlayerDeath(object sender, EventArgs e)
     {
         SetState(PlayerState.Death);
+        AudioManager.PlayAudio(collideAudio);
+        AudioManager.PlayAudio(DeathAudio);
         animator.SetTrigger("Death");
         Debug.Log("玩家死亡");
     }
@@ -111,6 +116,7 @@ public class Player : CharacterBase
     public override void Jump(float _jumpforce)
     {
         base.Jump(_jumpforce);
+        AudioManager.PlayAudio(jumpAudio);
         SetState(PlayerState.Jump);
     }
 

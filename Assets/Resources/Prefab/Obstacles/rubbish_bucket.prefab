@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 61701567731931688}
   - component: {fileID: 114414726913908656}
   - component: {fileID: 50484219661689090}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: rubbish_bucket
   m_TagString: Untagged
   m_Icon: {fileID: 0}

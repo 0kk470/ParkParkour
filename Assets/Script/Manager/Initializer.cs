@@ -12,6 +12,7 @@ public class Initializer : MonoBehaviour {
 
     private void Awake()
     {
+        //DataManager.SaveData("candy", 500);
         Application.targetFrameRate = 90;
         AVObject.RegisterSubclass<PlayerData>();
         int firstLaunch = PlayerPrefs.GetInt("launch");
