@@ -1,7 +1,7 @@
 # ParkParkour
 ## Information
 * Unity Version : 2017.3
-* Platform :Android | PC
+* Platform : Android | PC
 ## Plugins  
 * [Dotween](https://github.com/Demigiant/dotween)  
 * [JsonFx](https://github.com/jsonfx/jsonfx)
